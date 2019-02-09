@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Wave</title>
+  <meta name="author" content="Wave by Ruuth">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="foundation">
+      <div class="left">
+        <label class="big">Now playing</label>
+        <Nowplaying />
+
+      </div>
+      <div class="right">
+        <div class="navbar">
+          <ul class="navbar-buttons">
+            <li><router-link :to="{ name: 'explore' }">Explore</router-link></li>
+            <li><router-link :to="{ name: 'playback' }">Playback</router-link></li>
+            <li><router-link :to="{ name: 'browse' }">Browse</router-link></li>
+          </ul>
+        </div>
+        <div class="base-view">
+          <router-view class="view" name="a"></router-view>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

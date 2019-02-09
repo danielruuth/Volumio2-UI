@@ -1,0 +1,47 @@
+$theme-font: 'Lato', sans-serif;
+$color-peach: #F8E4DB;
+$margins: 25px;
+
+//Font
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+//Modules
+@import "now-playing";
+@import "navbar";
+@import "playback";
+
+
+body {
+  font-family: $theme-font;
+  margin:0;
+  padding:0;
+}
+
+.foundation{
+  display: flex;
+  min-height: 100%;
+  .left{
+    position: relative;
+    flex: 50%;
+    background-color: $color-peach;
+    padding: $margins;
+    text-align: center;
+  }
+  .right{
+    position: relative;
+    flex: 50%;
+    background-color: #fff;
+    padding: $margins;
+
+    .base-view{
+      margin-top: 66px;
+    }
+  }
+}
+
+
+  .big{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 $margins 0;
+  }

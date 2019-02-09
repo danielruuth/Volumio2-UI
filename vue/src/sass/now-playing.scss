@@ -1,0 +1,62 @@
+.now-playing{
+
+  .playhead-position{
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #676767;
+  }
+  .progress-gutter{
+    height: 5px;
+    width: 80%;
+    margin: 12px auto;
+    border-radius: 2.5px;
+    background-color: #D8D8D8;
+
+    .progress-bar{
+      height: 5px;
+      width: 0%;
+      max-width: 100%;
+      border-radius: 2.5px;
+      background-color: #7E7E7E;
+      transition: width .5s;
+    }
+  }
+
+  .cover-wrapper{
+    position: relative;
+    padding-top: $margins;
+
+    .track-info{
+      position: relative;
+      z-index: 2;
+      margin: $margins 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: #676767;
+    }
+
+    .cover{
+      position:relative;
+      margin: 0 auto;
+      width: 80%;
+      background-color: #fff;
+      background-size: cover;
+      background-position: center;
+      z-index:2;
+    }
+    .cover-blur{
+      top: 0;
+      z-index:1;
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      background-size: cover;
+      background-position: center;
+      filter:blur(48px);
+      opacity: 0;
+    }
+  }
+}

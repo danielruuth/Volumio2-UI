@@ -1,0 +1,21 @@
+.navbar{
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 46px;
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+
+  &-buttons{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      float:left;
+      line-height: 46px;
+      margin: 0 5px 0 5px;
+    }
+  }
+}
